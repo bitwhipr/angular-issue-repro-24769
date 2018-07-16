@@ -1,0 +1,21 @@
+//This component.
+app-navbar
+{
+    position: relative;
+    z-index: 10;
+    text-transform: uppercase;
+}
+
+.basic-navbar
+{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 8px 16px;
+}

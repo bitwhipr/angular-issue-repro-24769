@@ -1,0 +1,17 @@
+<app-navbar class="mat-primary mat-elevation-z6">
+</app-navbar>
+<mat-sidenav-container>
+  <mat-sidenav opened="false" mode="side" class="mat-elevation-z5">
+    <div class="simulate-tall-content">Sidenav content here</div>
+  </mat-sidenav>
+  <div class="app-content">
+    <mat-toolbar [color]="appService.contentTitleColor">
+      {{appService.contentTitle}}
+    </mat-toolbar>
+    <router-outlet></router-outlet>
+    <!-- App router content loads here -->
+  </div>
+</mat-sidenav-container>
+<div class='loader' *ngIf="appService.isLoading">
+  <mat-spinner></mat-spinner>
+</div>

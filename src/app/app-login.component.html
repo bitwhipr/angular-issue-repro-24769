@@ -1,0 +1,13 @@
+<div class="app-info-container">
+    <mat-card class="app-card hover-card">
+        <form #f="ngForm" (ngSubmit)="onSubmit()">
+            <mat-form-field>
+                <input matInput type="text" placeholder="Username" required/>
+            </mat-form-field>
+            <mat-form-field>
+                <input matInput type="password" placeholder="Password" required/>
+            </mat-form-field>
+            <button mat-button type="submit" color="primary">Login</button>
+        </form>
+    </mat-card>
+</div>

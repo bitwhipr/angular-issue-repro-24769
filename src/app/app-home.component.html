@@ -1,0 +1,17 @@
+<div class="app-info-container">
+    <mat-card class="app-card hover-card">
+        <div class="app-info">
+            <h1>{{appTitle}}</h1>
+            <h2>{{appDescription}}</h2>
+        </div>
+        <div>
+            <img matTooltip="Click me for a loading simulation!" matTooltipPosition="right" class="image-clickable" src="../assets/images/angular.png"
+                (click)="simulateLoad()">
+        </div>
+        <div>
+            <a mat-raised-button href="https://github.com/johnston4hooah/angular-issue-24769" target="_blank">
+            <img src="../assets/images/GitHub-Mark-32px.png">&nbsp;
+            Project Homepage</a>
+        </div>
+    </mat-card>
+</div>
